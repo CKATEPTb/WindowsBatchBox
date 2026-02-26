@@ -271,36 +271,11 @@ keybindings:
   - commands: ['focus --prev-active-workspace']
     bindings: ['lwin+ctrl+left', 'lwin+ctrl+up']
 
-  # Disables window management and all other keybindings until alt+shift+p
-  # is pressed again.
-  - commands: ['wm-toggle-pause']
-    bindings: ['alt+shift+p']
-
   # Change tiling direction. This determines where new tiling windows will
   # be inserted.
   - commands: ['toggle-tiling-direction']
     bindings: ['lwin+v']
 
-  # Change focus from tiling windows -> floating -> fullscreen.
-  - commands: ['wm-cycle-focus']
-    bindings: ['alt+space']
-
-  # Change the focused window to be floating.
-  - commands: ['toggle-floating --centered']
-    bindings: ['alt+shift+space']
-
-  # Change the focused window to be tiling.
-  - commands: ['toggle-tiling']
-    bindings: ['alt+t']
-
-  # Change the focused window to be fullscreen.
-  - commands: ['toggle-fullscreen']
-    bindings: ['lwin+f']
-
   # Kill GlazeWM process safely.
   - commands: ['wm-exit']
     bindings: ['lwin+y']
-    
-  # Close focused window.
-  - commands: ['close']
-    bindings: ['lwin+q']

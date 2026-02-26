@@ -23,3 +23,4 @@ cargo install --git https://github.com/Dutch-Raptor/GAT-GWM.git --features=no_co
 cd /d "%~dp0"
 if not exist "%USERPROFILE%\.glzr\glazewm" mkdir "%USERPROFILE%\.glzr\glazewm"
 copy /Y "Glaze WM.yaml" "%USERPROFILE%\.glzr\glazewm\config.yaml"
+choco install nircmd -y
