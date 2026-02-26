@@ -2,7 +2,7 @@
 
 A modular, keyboard-driven **TUI (Text User Interface)** orchestrator for automated Windows 11 setup. This tool streamlines the deployment of software and system optimizations using a simple, folder-based logic.
 
-![[demo.png]]
+![Project Preview](demo.png)
 
 ## 🚀 Concept & Architecture
 
