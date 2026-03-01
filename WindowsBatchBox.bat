@@ -612,7 +612,7 @@ function Run-Scripts([string[]]$selectedNames) {
             Write-Host "  -- End: $name (exit $code) --" -ForegroundColor DarkGray
             Write-Host ""
 
-            if ($code -ne 0) { throw "Exit code: $code" }
+            if ($code -ne 0 -and $code -ne -1978335189) { throw "Exit code: $code" }
             Write-Host "  [OK] $name" -ForegroundColor Green
             $results[$name] = @{ Success=$true; Name=$name }
         } catch {
