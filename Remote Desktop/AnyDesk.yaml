@@ -1,0 +1,6 @@
+name: AnyDesk
+description: Fast and secure remote desktop connection.
+depends:
+  - WinGet
+script: |
+    winget install --id AnyDesk.AnyDesk -e --accept-package-agreements --accept-source-agreements

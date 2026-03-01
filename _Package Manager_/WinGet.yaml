@@ -1,0 +1,4 @@
+name: WinGet
+description: Official Microsoft CLI for managing Windows apps.
+script: |
+    where winget >nul 2>nul || powershell -command "$ProgressPreference = 'SilentlyContinue'; iwr https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile $env:TEMP\winget.msixbundle; Add-AppxPackage $env:TEMP\winget.msixbundle"

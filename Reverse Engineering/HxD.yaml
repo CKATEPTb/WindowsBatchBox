@@ -1,0 +1,6 @@
+name: HxD
+description: Fast Hex editor for files, main memory, and disk images.
+depends:
+  - WinGet
+script: |
+    winget install --id MHNexus.HxD -e --accept-package-agreements --accept-source-agreements

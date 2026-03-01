@@ -1,0 +1,6 @@
+name: HeidiSQL
+description: Lightweight GUI for MySQL, MariaDB, and PostgreSQL.
+depends:
+  - WinGet
+script: |
+    winget install --id HeidiSQL.HeidiSQL -e --accept-package-agreements --accept-source-agreements

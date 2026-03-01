@@ -1,0 +1,8 @@
+name: rustup
+description: The Rust toolchain installer
+script: |
+    where cargo >nul 2>nul || winget install --id Rustlang.Rustup -e --accept-package-agreements --accept-source-agreements
+depends:
+  - WinGet
+includes:
+  - cargo

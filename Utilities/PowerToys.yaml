@@ -1,0 +1,6 @@
+name: PowerToys
+description: A set of utilities for power users to tune and streamline their Windows experience.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.PowerToys -e --accept-package-agreements --accept-source-agreements

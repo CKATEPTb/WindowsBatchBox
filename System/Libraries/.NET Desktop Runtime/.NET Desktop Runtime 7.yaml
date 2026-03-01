@@ -1,0 +1,6 @@
+name: .NET Desktop Runtime 7
+description: Standard Term Support version of the .NET runtime (STS).
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.DotNet.DesktopRuntime.7 -e --accept-package-agreements --accept-source-agreements

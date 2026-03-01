@@ -1,0 +1,22 @@
+name: 4 - High
+description: "Creative workstation: 3D, Video, Art & full system runtimes."
+script: |
+    @echo off
+depends:
+  - 3 - Middle
+  - Blender
+  - Kdenlive
+  - Krita
+  - Obsidian
+  - RustDesk
+  - Visual C++ Redistributable 2015-2022 (x64)
+  - .NET Desktop Runtime 3
+  - .NET Desktop Runtime 5
+  - .NET Desktop Runtime 6
+  - .NET Desktop Runtime 7
+  - .NET Desktop Runtime 8
+  - .NET Desktop Runtime 9
+  - .NET Desktop Runtime 10
+  - HandBrake
+  - MSEdgeRedirect
+  - PowerToys

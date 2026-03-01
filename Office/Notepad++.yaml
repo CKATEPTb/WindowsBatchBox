@@ -1,0 +1,6 @@
+name: Notepad++
+description: Extensible text editor with syntax highlighting.
+depends:
+  - WinGet
+script: |
+    winget install --id Notepad++.Notepad++ -e --accept-package-agreements --accept-source-agreements

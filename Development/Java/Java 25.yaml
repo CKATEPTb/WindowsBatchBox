@@ -1,0 +1,6 @@
+name: Java 25
+description: Project Valhalla and Panama features.
+depends:
+  - WinGet
+script: |
+    winget install --id Amazon.Corretto.25.JDK -e --accept-package-agreements --accept-source-agreements

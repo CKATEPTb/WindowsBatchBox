@@ -1,0 +1,6 @@
+name: Visual C++ Redistributable 2015-2022 (x64)
+description: Standard C++ libraries required to run many Windows applications.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.VCRedist.2015+.x64 -e --accept-package-agreements --accept-source-agreements

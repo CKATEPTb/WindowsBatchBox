@@ -1,0 +1,6 @@
+name: GitHub CLI
+description: Command line wrapper for git that makes you better at GitHub. 
+depends:
+  - WinGet
+script: |
+    where gh >nul 2>nul || winget install --id GitHub.cli -e --accept-package-agreements --accept-source-agreements

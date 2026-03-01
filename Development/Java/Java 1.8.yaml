@@ -1,0 +1,6 @@
+name: Java 1.8
+description: Introduced Lambda expressions and Streams.
+depends:
+  - WinGet
+script: |
+    winget install --id Amazon.Corretto.8.JDK -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,12 @@
+name: Backend
+description: The standard, built-in Node.js package manager.
+script: |
+    @echo off
+depends:
+  - 1 - Lowest
+  - Git
+  - GitHub CLI
+  - Windows Terminal
+  - HeidiSQL
+  - MongoDB Compass
+  - SQLite Browser

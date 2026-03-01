@@ -1,0 +1,6 @@
+name: VLC
+description: Powerful media player that plays almost any file.
+depends:
+  - WinGet
+script: |
+    winget install --id VideoLAN.VLC -e --accept-package-agreements --accept-source-agreements

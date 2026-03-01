@@ -1,0 +1,6 @@
+name: NirCmd
+description: Small command-line utility that allows you to do some useful tasks without displaying any UI.
+depends:
+  - Chocolatey
+script: |
+  choco install nircmd -y

@@ -1,0 +1,6 @@
+name: GeForce NOW
+description: Web based game streaming, powered by NVIDIA. 
+depends:
+  - WinGet
+script: |
+    winget install --id Nvidia.GeForceNow -e --accept-package-agreements --accept-source-agreements

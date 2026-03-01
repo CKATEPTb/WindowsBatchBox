@@ -1,0 +1,6 @@
+name: Opera GX
+description: Special version of the Opera browser built specifically for gamers.
+depends:
+  - WinGet
+script: |
+    winget install --id Opera.OperaGX -e --accept-package-agreements --accept-source-agreements

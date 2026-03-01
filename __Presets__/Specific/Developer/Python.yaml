@@ -1,0 +1,14 @@
+name: Python
+description: Complete Python Ecosystem. Includes legacy (2.7), stable (3.13), and edge (3.14) runtimes with uv manager.
+script: |
+    @echo off
+depends:
+  - 1 - Lowest
+  - Git
+  - GitHub CLI
+  - Windows Terminal
+  - Python 2.7
+  - Python 3.13
+  - Python 3.14
+  - uv
+  - JetBrains Toolbox

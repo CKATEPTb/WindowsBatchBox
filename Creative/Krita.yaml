@@ -1,0 +1,6 @@
+name: Krita
+description: Professional free and open source painting program.
+depends:
+  - WinGet
+script: |
+    winget install --id KDE.Krita -e --accept-package-agreements --accept-source-agreements

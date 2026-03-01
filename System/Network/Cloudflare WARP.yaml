@@ -1,0 +1,6 @@
+name: Cloudflare WARP
+description: A free app that makes your Internet more private and fast with 1.1.1.1.
+depends:
+  - WinGet
+script: |
+    winget install --id Cloudflare.Warp -e --accept-package-agreements --accept-source-agreements

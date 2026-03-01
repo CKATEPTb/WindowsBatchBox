@@ -1,0 +1,6 @@
+name: Git
+description: Distributed version control system; tracks code changes
+depends:
+  - WinGet
+script: |
+    where git >nul 2>nul || winget install --id Git.Git -e --accept-package-agreements --accept-source-agreements

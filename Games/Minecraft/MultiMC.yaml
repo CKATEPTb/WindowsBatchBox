@@ -1,0 +1,6 @@
+name: MultiMC
+description: The classic, lightweight instance-based Minecraft launcher.
+depends:
+  - WinGet
+script: |
+    winget install --id MultiMC.MultiMC -e --accept-package-agreements --accept-source-agreements

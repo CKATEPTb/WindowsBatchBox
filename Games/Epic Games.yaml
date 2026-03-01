@@ -1,0 +1,6 @@
+name: Epic Games
+description: Digital storefront for games with weekly free titles.
+depends:
+  - WinGet
+script: |
+    winget install --id EpicGames.EpicGamesLauncher -e --accept-package-agreements --accept-source-agreements

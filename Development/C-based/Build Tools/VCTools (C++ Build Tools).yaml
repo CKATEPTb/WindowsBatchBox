@@ -1,0 +1,6 @@
+name: VCTools (C++ Build Tools)
+description: Standalone MSVC compiler, libraries, and SDKs for C++ development without IDE.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.VisualStudio.2022.BuildTools -e --accept-package-agreements --accept-source-agreements --override "--passive --wait --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended"

@@ -1,0 +1,4 @@
+name: Chocolatey
+description: Community-driven package manager for Windows automation.
+script: |
+    where choco >nul 2>nul || powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"

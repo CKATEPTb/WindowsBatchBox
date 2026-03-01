@@ -1,0 +1,6 @@
+name: JetBrains Toolbox
+description: A control panel for your JetBrains tools and projects
+depends:
+  - WinGet
+script: |
+    winget install --id JetBrains.Toolbox -e --accept-package-agreements --accept-source-agreements

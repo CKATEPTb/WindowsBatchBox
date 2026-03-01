@@ -1,0 +1,6 @@
+name: Java 11
+description: HTTP Client and modular runtime.
+depends:
+  - WinGet
+script: |
+    winget install --id Amazon.Corretto.11.JDK -e --accept-package-agreements --accept-source-agreements

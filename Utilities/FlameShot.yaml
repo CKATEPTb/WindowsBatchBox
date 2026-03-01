@@ -1,0 +1,6 @@
+name: FlameShot
+description: Powerful yet simple-to-use screenshot software
+depends:
+  - WinGet
+script: |
+    winget install --id Flameshot.Flameshot -e --accept-package-agreements --accept-source-agreements

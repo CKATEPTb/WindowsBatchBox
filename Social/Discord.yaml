@@ -1,0 +1,6 @@
+name: Discord
+description: All-in-one voice and text chat for gamers and communities.
+depends:
+  - WinGet
+script: |
+    winget install --id Discord.Discord -e --accept-package-agreements --accept-source-agreements

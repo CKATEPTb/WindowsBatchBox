@@ -1,0 +1,6 @@
+name: LibreWolf
+description: A custom version of Firefox focused on privacy.
+depends:
+  - WinGet
+script: |
+    winget install --id LibreWolf.LibreWolf -e --accept-package-agreements --accept-source-agreements

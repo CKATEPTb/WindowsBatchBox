@@ -1,0 +1,6 @@
+name: Java 21
+description: Virtual Threads and switch Pattern Matching.
+depends:
+  - WinGet
+script: |
+    winget install --id Amazon.Corretto.21.JDK -e --accept-package-agreements --accept-source-agreements

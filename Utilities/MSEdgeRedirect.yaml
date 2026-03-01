@@ -1,0 +1,6 @@
+name: MSEdgeRedirect
+description: A tool to redirect Edge-specific links (like Start Menu searches) to your default browser.
+depends:
+  - WinGet
+script: |
+  winget install --id rcmaehl.MSEdgeRedirect -e --accept-package-agreements --accept-source-agreements

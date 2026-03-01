@@ -1,0 +1,6 @@
+name: Ninja
+description: a small build system with a focus on speed 
+depends:
+  - WinGet
+script: |
+    where ninja >nul 2>nul || winget install --id Ninja-build.Ninja -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: NVM
+description: A node.js version management utility for Windows. 
+depends:
+  - WinGet
+script: |
+    where nvm >nul 2>nul || winget install --id CoreyButler.NVMforWindows -e --accept-package-agreements --accept-source-agreements

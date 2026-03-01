@@ -1,0 +1,37 @@
+name: Recaf
+description: The modern Java bytecode editor.
+script: |
+    @echo off
+    setlocal enabledelayedexpansion
+    :: 1. Настройка путей
+    set "INSTALL_DIR=%APPDATA%\RecafLauncher"
+    set "SHORTCUT_PATH=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Recaf Launcher.lnk"
+    if not exist "%INSTALL_DIR%" mkdir "%INSTALL_DIR%"
+    :: 2. Поиск прямой ссылки на последнюю GUI версию через GitHub API (используем powershell для парсинга)
+    echo Finding latest Recaf Launcher GUI...
+    for /f "delims=" %%i in ('powershell -command "$re = Invoke-RestMethod 'https://api.github.com/repos/Col-E/Recaf-Launcher/releases/latest'; ($re.assets | Where-Object { $_.name -like '*gui*.jar' } | Select-Object -First 1).browser_download_url"') do set "DOWNLOAD_URL=%%i"
+    for /f "delims=" %%n in ('powershell -command "$re = Invoke-RestMethod 'https://api.github.com/repos/Col-E/Recaf-Launcher/releases/latest'; ($re.assets | Where-Object { $_.name -like '*gui*.jar' } | Select-Object -First 1).name"') do set "FILE_NAME=%%n"
+    if "%DOWNLOAD_URL%"=="" (
+        echo Error: Could not find GUI version.
+        pause
+        exit /b
+    )
+    :: 3. Скачивание файла через curl
+    echo Downloading %FILE_NAME%...
+    curl -L -o "%INSTALL_DIR%\%FILE_NAME%" "%DOWNLOAD_URL%"
+    :: 4. Создание ярлыка в меню Пуск (через VBScript внутри BAT)
+    echo Creating shortcut...
+    set "VBS_SCRIPT=%TEMP%\create_shortcut.vbs"
+    echo Set oWS = WScript.CreateObject("WScript.Shell") > "%VBS_SCRIPT%"
+    echo sLinkFile = "%SHORTCUT_PATH%" >> "%VBS_SCRIPT%"
+    echo Set oLink = oWS.CreateShortcut(sLinkFile) >> "%VBS_SCRIPT%"
+    echo oLink.TargetPath = "javaw.exe" >> "%VBS_SCRIPT%"
+    echo oLink.Arguments = "-jar ""%INSTALL_DIR%\%FILE_NAME%""" >> "%VBS_SCRIPT%"
+    echo oLink.WorkingDirectory = "%INSTALL_DIR%" >> "%VBS_SCRIPT%"
+    echo oLink.Description = "Recaf Launcher" >> "%VBS_SCRIPT%"
+    echo oLink.Save >> "%VBS_SCRIPT%"
+    cscript /nologo "%VBS_SCRIPT%"
+    del "%VBS_SCRIPT%"
+    echo Done! Recaf Launcher is now in your Start Menu.
+depends:
+  - Java 25

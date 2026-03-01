@@ -1,0 +1,10 @@
+name: pnpm
+description: Fast, disk space efficient npm alternative
+script: |
+    where pnpm >nul 2>nul ||  (
+        set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+        corepack enable pnpm
+        pnpm -v
+    )
+depends:
+  - NodeJS

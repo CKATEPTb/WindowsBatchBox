@@ -1,0 +1,6 @@
+name: Battle.net
+description: Blizzard Entertainment's digital distribution platform.
+depends:
+  - WinGet
+script: |
+    winget install --id Blizzard.BattleNet -e --accept-package-agreements --accept-source-agreements

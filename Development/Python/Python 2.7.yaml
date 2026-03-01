@@ -1,0 +1,6 @@
+name: Python 2.7
+description: Legacy version (End of Life). Use for compatibility only.
+depends:
+  - WinGet
+script: |
+  winget install --id Python.Python.2 -e --accept-package-agreements --accept-source-agreements

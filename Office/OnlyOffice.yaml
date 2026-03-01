@@ -1,0 +1,6 @@
+name: OnlyOffice
+description: Open-source office suite; high MS Office compatibility.
+depends:
+  - WinGet
+script: |
+    winget install --id ONLYOFFICE.DesktopEditors -e --accept-package-agreements --accept-source-agreements

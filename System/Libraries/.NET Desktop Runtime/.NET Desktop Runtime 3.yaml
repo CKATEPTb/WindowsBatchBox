@@ -1,0 +1,6 @@
+name: .NET Desktop Runtime 3
+description: Legacy .NET Core runtime required for older desktop applications.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.DotNet.DesktopRuntime.3_1 -e --accept-package-agreements --accept-source-agreements

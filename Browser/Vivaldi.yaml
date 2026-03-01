@@ -1,0 +1,6 @@
+name: Vivaldi
+description: Highly customizable browser for power users.
+depends:
+  - WinGet
+script: |
+    winget install --id Vivaldi.Vivaldi -e --accept-package-agreements --accept-source-agreements

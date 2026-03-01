@@ -1,0 +1,6 @@
+name: MongoDB Compass
+description: The official GUI to query and visualize MongoDB data.
+depends:
+  - WinGet
+script: |
+    winget install --id MongoDB.Compass.Full -e --accept-package-agreements --accept-source-agreements

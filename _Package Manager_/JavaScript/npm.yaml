@@ -1,0 +1,6 @@
+name: npm
+description: The standard, built-in Node.js package manager.
+script: |
+    @echo off
+depends:
+  - NodeJS

@@ -1,0 +1,6 @@
+name: Veeam Agent
+description: Reliable backup solution for Windows.
+depends:
+  - WinGet
+script: |
+    winget install --id Veeam.VeeamAgent -e --accept-package-agreements --accept-source-agreements

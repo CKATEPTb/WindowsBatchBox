@@ -1,0 +1,8 @@
+name: NodeJS
+description: JavaScript runtime built on Chrome's V8 engine 
+script: |
+    where node >nul 2>nul || (nvm install lts && nvm use lts)
+depends:
+  - NVM
+includes:
+  - npm

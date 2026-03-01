@@ -1,0 +1,6 @@
+name: qView
+description: Fast, open-source and minimalist image viewer.
+depends:
+  - WinGet
+script: |
+    winget install --id jurplel.qView -e --accept-package-agreements --accept-source-agreements

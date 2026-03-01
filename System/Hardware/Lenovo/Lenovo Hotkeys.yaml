@@ -1,0 +1,6 @@
+name: Lenovo Hotkeys
+description: Enables Fn-key functions and on-screen displays for Caps Lock, Mic Mute, etc.
+depends:
+  - WinGet
+script: |
+  winget install --id 9PCMMNB260TX -e --source msstore --accept-package-agreements --accept-source-agreements

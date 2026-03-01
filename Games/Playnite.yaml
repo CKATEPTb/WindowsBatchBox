@@ -1,0 +1,6 @@
+name: Playnite
+description: Open-source video game library manager and launcher.
+depends:
+  - WinGet
+script: |
+    winget install --id Playnite.Playnite -e --accept-package-agreements --accept-source-agreements

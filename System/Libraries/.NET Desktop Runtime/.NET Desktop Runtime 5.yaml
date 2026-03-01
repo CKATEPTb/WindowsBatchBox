@@ -1,0 +1,6 @@
+name: .NET Desktop Runtime 5
+description: Legacy .NET 5 runtime (EOL) for desktop applications.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.DotNet.DesktopRuntime.5 -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: Brave
+description: Privacy-focused browser with built-in ad blocking.
+depends:
+  - WinGet
+script: |
+    winget install --id Brave.Brave -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: Obsidian
+description: Powerful knowledge base on top of local Markdown files.
+depends:
+  - WinGet
+script: |
+    winget install --id Obsidian.Obsidian -e --accept-package-agreements --accept-source-agreements

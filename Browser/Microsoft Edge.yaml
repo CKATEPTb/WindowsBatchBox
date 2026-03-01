@@ -1,0 +1,6 @@
+name: Microsoft Edge
+description: Modern Chromium-based browser by Microsoft.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.Edge -e --accept-package-agreements --accept-source-agreements

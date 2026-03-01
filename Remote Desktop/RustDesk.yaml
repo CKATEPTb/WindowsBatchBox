@@ -1,0 +1,6 @@
+name: RustDesk
+description: Open source remote desktop software.
+depends:
+  - WinGet
+script: |
+    winget install --id RustDesk.RustDesk -e --accept-package-agreements --accept-source-agreements

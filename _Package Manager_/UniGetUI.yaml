@@ -1,0 +1,6 @@
+name: UniGetUI
+description: Intuitive GUI for WinGet, Chocolatey, Scoop, and more.
+depends:
+  - WinGet
+script: |
+  winget install --id MartiCliment.UniGetUI -e --accept-package-agreements --accept-source-agreements

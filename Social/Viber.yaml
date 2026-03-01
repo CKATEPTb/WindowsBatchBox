@@ -1,0 +1,6 @@
+name: Viber
+description: Free and secure calls and messages to anyone, anywhere.
+depends:
+  - WinGet
+script: |
+    winget install --id Rakuten.Viber -e --accept-package-agreements --accept-source-agreements

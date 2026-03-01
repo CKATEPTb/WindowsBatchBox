@@ -1,0 +1,6 @@
+name: Minecraft Launcher
+description: Official launcher for Minecraft Java and Bedrock editions.
+depends:
+  - WinGet
+script: |
+    winget install --id Mojang.MinecraftLauncher -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: Blender
+description: 3D creation suite for modeling, animation and more.
+depends:
+  - WinGet
+script: |
+    winget install --id BlenderFoundation.Blender -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: Java 16
+description: Finalized Records and Pattern Matching for instanceof.
+depends:
+  - WinGet
+script: |
+    winget install --id AdoptOpenJDK.OpenJDK.16 -e --accept-package-agreements --accept-source-agreements

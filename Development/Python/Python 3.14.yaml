@@ -1,0 +1,6 @@
+name: Python 3.14
+description: Bleeding-edge version with Experimental JIT.
+depends:
+  - WinGet
+script: |
+  winget install --id Python.Python.3.14 -e --accept-package-agreements --accept-source-agreements

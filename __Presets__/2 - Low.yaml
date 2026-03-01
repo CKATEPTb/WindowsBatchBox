@@ -1,0 +1,10 @@
+name: 2 - Low
+description: Extended daily setup. Adds fast image viewing, universal media player, and Telegram messenger.
+script: |
+    @echo off
+depends:
+  - 1 - Lowest
+  - qView
+  - VLC
+  - Telegram
+  - WinRAR

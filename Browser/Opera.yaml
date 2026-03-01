@@ -1,0 +1,6 @@
+name: Opera
+description: Fast browser with built-in VPN and ad blocker.
+depends:
+  - WinGet
+script: |
+    winget install --id Opera.Opera -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: Java 17
+description: Sealed classes and restored floating-point.
+depends:
+  - WinGet
+script: |
+    winget install --id Amazon.Corretto.17.JDK -e --accept-package-agreements --accept-source-agreements

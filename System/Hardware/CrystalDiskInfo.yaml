@@ -1,0 +1,6 @@
+name: CrystalDiskInfo
+description: HDD/SSD utility software for checking health status and monitoring temperature.
+depends:
+  - WinGet
+script: |
+  winget install --id CrystalDewWorld.CrystalDiskInfo -e --accept-package-agreements --accept-source-agreements

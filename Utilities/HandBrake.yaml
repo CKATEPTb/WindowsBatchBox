@@ -1,0 +1,6 @@
+name: HandBrake
+description: Tool for converting video from nearly any format.
+depends:
+  - WinGet
+script: |
+    winget install --id HandBrake.HandBrake -e --accept-package-agreements --accept-source-agreements

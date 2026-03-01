@@ -1,0 +1,6 @@
+name: "Bun "
+description: A fast JavaScript package manager
+script: |
+    @echo off
+depends:
+  - Bun

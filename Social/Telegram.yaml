@@ -1,0 +1,6 @@
+name: Telegram
+description: Fast, secure, and cloud-based desktop messaging app.
+depends:
+  - WinGet
+script: |
+    winget install --id Telegram.TelegramDesktop -e --accept-package-agreements --accept-source-agreements

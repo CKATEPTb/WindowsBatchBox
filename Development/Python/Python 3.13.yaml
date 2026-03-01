@@ -1,0 +1,6 @@
+name: Python 3.13
+description: Stable version for modern development.
+depends:
+  - WinGet
+script: |
+  winget install --id Python.Python.3.13 -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: OpenVPN Connect
+description: Official full-featured VPN client for the OpenVPN protocol.
+depends:
+  - WinGet
+script: |
+    winget install --id OpenVPNTechnologies.OpenVPNConnect -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: Kdenlive
+description: Non-linear video editor based on the MLT Framework.
+depends:
+  - WinGet
+script: |
+    winget install --id KDE.Kdenlive -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: Ferdium
+description: All-in-one app for Telegram, Discord, Slack and more.
+depends:
+  - WinGet
+script: |
+    winget install --id Ferdium.Ferdium -e --accept-package-agreements --accept-source-agreements

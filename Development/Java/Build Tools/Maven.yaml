@@ -1,0 +1,6 @@
+name: Maven
+description: Build automation tool for Java; manages dependencies.
+depends:
+  - Chocolatey
+script: |
+    where mvn >nul 2>nul || choco install maven -y

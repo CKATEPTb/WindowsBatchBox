@@ -1,0 +1,6 @@
+name: CMake
+description: Cross-platform, open-source build system.
+depends:
+  - WinGet
+script: |
+    where cmake >nul 2>nul || winget install --id Kitware.CMake -e --accept-package-agreements --accept-source-agreements

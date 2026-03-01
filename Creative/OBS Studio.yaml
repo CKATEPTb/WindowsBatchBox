@@ -1,0 +1,6 @@
+name: OBS Studio
+description: Software for video recording and live streaming.
+depends:
+  - WinGet
+script: |
+    winget install --id OBSProject.OBSStudio -e --accept-package-agreements --accept-source-agreements

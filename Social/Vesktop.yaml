@@ -1,0 +1,6 @@
+name: Vesktop
+description: Optimized Discord client with Vencord and audio fixes.
+depends:
+  - WinGet
+script: |
+    winget install --id Vencord.Vesktop -e

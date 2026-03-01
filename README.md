@@ -1,3 +1,5 @@
+# Todo - ADD CONFIGURED BUNDLES; ADD TWEAKS; UPDATE README
+
 # 🛠️ Win-11-Tuner
 
 A modular, keyboard-driven **TUI (Text User Interface)** orchestrator for automated Windows 11 setup. This tool streamlines the deployment of software and system optimizations using a simple, folder-based logic.

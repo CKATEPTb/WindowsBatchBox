@@ -1,0 +1,6 @@
+name: Sandboxie Plus
+description: Run applications in isolation to prevent permanent changes.
+depends:
+  - WinGet
+script: |
+    winget install --id DavidXanatos.SandboxiePlus -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,6 @@
+name: .NET Desktop Runtime 8
+description: Current Long-term support (LTS) version. Essential for modern Windows apps.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.DotNet.DesktopRuntime.8 -e --accept-package-agreements --accept-source-agreements

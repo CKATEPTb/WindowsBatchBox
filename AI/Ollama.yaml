@@ -1,0 +1,6 @@
+name: Ollama
+description: Run open-source large language models (Llama, Mistral, etc.) locally on your machine.
+depends:
+  - WinGet
+script: |
+  winget install --id Ollama.Ollama -e --accept-package-agreements --accept-source-agreements

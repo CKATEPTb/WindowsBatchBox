@@ -1,0 +1,6 @@
+name: Google Chrome
+description: The world's most popular and fastest web browser.
+depends:
+  - WinGet
+script: |
+    winget install --id Google.Chrome -e --accept-package-agreements --accept-source-agreements

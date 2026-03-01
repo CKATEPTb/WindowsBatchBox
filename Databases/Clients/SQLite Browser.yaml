@@ -1,0 +1,6 @@
+name: SQLite Browser
+description: Visual tool to create, design, and edit SQLite files.
+depends:
+  - WinGet
+script: |
+    winget install --id DBBrowserForSQLite.DBBrowserForSQLite -e --accept-package-agreements --accept-source-agreements

@@ -1,0 +1,16 @@
+name: Rust
+description: "Complete Rust stack: Toolchains, Ninja/CMake build systems, and HxD for low-level debugging."
+script: |
+    @echo off
+depends:
+  - 1 - Lowest
+  - Git
+  - GitHub CLI
+  - Windows Terminal
+  - CMake
+  - Ninja
+  - Visual C++ Redistributable 2015-2022 (x64)
+  - VCTools (C++ Build Tools)
+  - HxD
+  - rustup
+  - JetBrains Toolbox

@@ -1,0 +1,6 @@
+name: cargo
+description: Rust package manager; builds and runs your projects.
+script: |
+    @echo off
+depends:
+  - rustup

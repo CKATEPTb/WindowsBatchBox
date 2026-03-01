@@ -1,0 +1,6 @@
+name: Windows Terminal
+description: Modern, fast, and powerful terminal emulator.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.WindowsTerminal -e --accept-package-agreements --accept-source-agreements

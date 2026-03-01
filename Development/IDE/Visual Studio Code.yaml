@@ -1,0 +1,6 @@
+name: Visual Studio Code
+description: Code editing. Redefined. The most popular open-source code editor.
+depends:
+  - WinGet
+script: |
+  winget install --id Microsoft.VisualStudioCode -e --accept-package-agreements --accept-source-agreements

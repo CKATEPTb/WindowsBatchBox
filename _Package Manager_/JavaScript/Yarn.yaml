@@ -1,0 +1,10 @@
+name: Yarn
+description: Fast, secure npm alternative created by Meta.
+script: |
+    where yarn >nul 2>nul ||  (
+        set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+        corepack enable yarn
+        yarn -v
+    )
+depends:
+  - NodeJS

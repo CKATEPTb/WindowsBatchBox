@@ -1,0 +1,6 @@
+name: TeamViewer
+description: Remote support, remote access, and online collaboration.
+depends:
+  - WinGet
+script: |
+    winget install --id TeamViewer.TeamViewer -e --accept-package-agreements --accept-source-agreements

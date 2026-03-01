@@ -1,0 +1,6 @@
+name: "uv "
+description: Extremely fast Python package manager. Replaces pip, venv, and pyenv.
+script: |
+    @echo off
+depends:
+  - uv

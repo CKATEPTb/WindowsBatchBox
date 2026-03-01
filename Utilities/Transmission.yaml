@@ -1,0 +1,6 @@
+name: Transmission
+description: Fast, easy, and free BitTorrent client with a simple interface.
+depends:
+  - WinGet
+script: |
+  winget install --id Transmission.Transmission -e --accept-package-agreements --accept-source-agreements

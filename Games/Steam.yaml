@@ -1,0 +1,6 @@
+name: Steam
+description: Valve's official steam client. 
+depends:
+  - WinGet
+script: |
+    winget install --id Valve.Steam -e --accept-package-agreements --accept-source-agreements

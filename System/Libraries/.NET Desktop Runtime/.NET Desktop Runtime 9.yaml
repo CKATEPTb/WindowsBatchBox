@@ -1,0 +1,6 @@
+name: .NET Desktop Runtime 9
+description: Standard Term Support (STS) version of the .NET runtime for the latest Windows apps.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.DotNet.DesktopRuntime.9 -e --accept-package-agreements --accept-source-agreements

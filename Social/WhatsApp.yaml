@@ -1,0 +1,6 @@
+name: WhatsApp
+description: Simple and reliable private messaging and calling.
+depends:
+  - WinGet
+script: |
+    winget install --id 9NKSQGP7F2NH -e --accept-package-agreements --accept-source-agreements

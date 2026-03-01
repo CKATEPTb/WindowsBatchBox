@@ -1,0 +1,6 @@
+name: Gradle
+description: High-performance build tool for Java and Android apps.
+depends:
+  - Chocolatey
+script: |
+    where gradle >nul 2>nul || choco install gradle -y

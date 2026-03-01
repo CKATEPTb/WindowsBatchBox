@@ -1,0 +1,6 @@
+name: Spotify
+description: Digital music service with access to millions of songs.
+depends:
+  - WinGet
+script: |
+    winget install --id Spotify.Spotify -e --accept-package-agreements --accept-source-agreements

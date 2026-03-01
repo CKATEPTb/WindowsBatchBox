@@ -1,0 +1,8 @@
+name: Bun
+description: A fast all-in-one JavaScript runtime
+depends:
+  - WinGet
+script: |
+    where bun >nul 2>nul || winget install --id Oven-sh.Bun -e --accept-package-agreements --accept-source-agreements
+includes:
+  - "Bun "

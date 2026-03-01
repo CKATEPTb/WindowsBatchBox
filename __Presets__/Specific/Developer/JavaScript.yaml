@@ -1,0 +1,14 @@
+name: JavaScript
+description: "JavaScript & Frontend environment: pnpm, JetBrains tools, VS Code and Browsers."
+script: |
+    @echo off
+depends:
+  - 1 - Lowest
+  - LibreWolf
+  - Microsoft Edge
+  - Git
+  - GitHub CLI
+  - Windows Terminal
+  - pnpm
+  - Visual Studio Code
+  - JetBrains Toolbox

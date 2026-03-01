@@ -1,0 +1,6 @@
+name: .NET Desktop Runtime 10
+description: Long-term support (LTS) version. Essential for the newest generation of Windows applications.
+depends:
+  - WinGet
+script: |
+    winget install --id Microsoft.DotNet.DesktopRuntime.10 -e --accept-package-agreements --accept-source-agreements

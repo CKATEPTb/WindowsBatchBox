@@ -1,0 +1,8 @@
+name: uv
+description: Extremely fast Python version manager. Replaces pip, venv, and pyenv.
+depends:
+  - WinGet
+script: |
+  where uv >nul 2>nul || winget install --id astral-sh.uv -e --accept-package-agreements --accept-source-agreements
+includes:
+  - "uv "

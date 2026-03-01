@@ -1,0 +1,6 @@
+name: Lenovo Commercial Vantage
+description: Clean, ad-free enterprise version of Lenovo Vantage for battery limits and BIOS updates.
+depends:
+  - WinGet
+script: |
+  winget install --id 9NR5B8GVVM13 -e --source msstore --accept-package-agreements --accept-source-agreements

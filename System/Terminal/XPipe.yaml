@@ -1,0 +1,6 @@
+name: XPipe
+description: Multi-platform connection hub for SSH, Docker and Shell.
+depends:
+  - WinGet
+script: |
+    winget install --id xpipe-io.xpipe -e --accept-package-agreements --accept-source-agreements

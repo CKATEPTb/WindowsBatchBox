@@ -1,0 +1,6 @@
+name: Firefox
+description: Open-source browser with strong privacy and freedom.
+depends:
+  - WinGet
+script: |
+    winget install --id Mozilla.Firefox -e --accept-package-agreements --accept-source-agreements

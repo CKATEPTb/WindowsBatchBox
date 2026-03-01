@@ -1,0 +1,6 @@
+name: Prism Launcher
+description: Advanced MultiMC fork with built-in CurseForge/Modrinth browser.
+depends:
+  - WinGet
+script: |
+    winget install --id PrismLauncher.PrismLauncher -e --accept-package-agreements --accept-source-agreements
