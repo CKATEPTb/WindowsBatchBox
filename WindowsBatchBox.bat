@@ -15,6 +15,19 @@ fltmc > nul 2>&1 || (
 
 cd /d "%~dp0"
 
+
+where choco >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo [!] Installing Chocolatey...
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
+    
+    :: Обновляем PATH для текущего окна, чтобы сразу увидеть choco
+    set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+    
+    echo [OK] Chocolatey installed. Restarting logic...
+    goto :start_main
+)
+
 set "PS_SOURCE=%~f0"
 set "PS_TARGET=%~f0.ps1"
 
@@ -596,6 +609,7 @@ function Run-Scripts([string[]]$selectedNames) {
 
             $batLines = [System.Collections.Generic.List[string]]::new()
             $batLines.Add('@echo off')
+			$batLines.Add('where refreshenv >nul 2>nul && call refreshenv >nul 2>nul')
             foreach ($scriptLine in ($s.Script -split "`r?`n")) {
                 $batLines.Add($scriptLine)
             }
@@ -604,6 +618,10 @@ function Run-Scripts([string[]]$selectedNames) {
 
             Write-Host ""
             Write-Host "  -- Output: $name --" -ForegroundColor DarkGray
+			
+			if (Get-Command refreshenv -ErrorAction SilentlyContinue) {
+				refreshenv 2>&1 | Out-Null
+			}
 
             # Run the .bat via Start-Process — output is shown live in current console window
             $proc = Start-Process cmd -ArgumentList "/c `"$tmpBat`"" -Wait -NoNewWindow -PassThru
