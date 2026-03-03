@@ -1,0 +1,6 @@
+name: SeelenUI
+description: The First WebView-Based, Fully Customizable Desktop Environment.
+depends:
+  - WinGet
+script: |
+  winget install --id Seelen.SeelenUI -e --accept-package-agreements --accept-source-agreements

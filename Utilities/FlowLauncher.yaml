@@ -1,0 +1,6 @@
+name: FlowLauncher
+description: A quick file search and app launcher for Windows with community-made plugins.
+depends:
+  - WinGet
+script: |
+    winget install --id Flow-Launcher.Flow-Launcher -e --accept-package-agreements --accept-source-agreements

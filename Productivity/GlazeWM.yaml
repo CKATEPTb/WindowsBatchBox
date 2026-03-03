@@ -1,0 +1,6 @@
+name: GlazeWM
+description: A dynamic tiling window manager for Windows inspired by i3wm.
+depends:
+  - WinGet
+script: |
+  winget install --id glzr-io.glazewm -e --accept-package-agreements --accept-source-agreements

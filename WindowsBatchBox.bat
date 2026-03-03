@@ -622,6 +622,8 @@ function Run-Scripts([string[]]$selectedNames) {
 			if (Get-Command refreshenv -ErrorAction SilentlyContinue) {
 				refreshenv 2>&1 | Out-Null
 			}
+						
+			$env:SCRIPT_SOURCE = $s.FilePath
 
             # Run the .bat via Start-Process — output is shown live in current console window
             $proc = Start-Process cmd -ArgumentList "/c `"$tmpBat`"" -Wait -NoNewWindow -PassThru

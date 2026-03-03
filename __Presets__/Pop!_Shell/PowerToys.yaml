@@ -1,0 +1,14 @@
+name: "PowerToys "
+description: Configured utils and keybinds designed to replicate popshell experience. Intended for use with GlazeWM.
+depends:
+  - PowerToys
+  - NirCmd
+  - "GlazeWM "
+script: |
+  taskkill /F /IM PowerToys* /T
+  taskkill /IM Microsoft.CmdPal.UI.exe /f
+  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
+  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\PowerToys.zip' -DestinationPath '%LocalAppdata%' -Force"
+  schtasks /create /tn "InstantPowerToys" /tr "'%LocalAppdata%\PowerToys\PowerToys.exe' restart_as_admin" /sc once /st 00:00 /rl highest /f
+  schtasks /run /tn "InstantPowerToys"
+  schtasks /delete /tn "InstantPowerToys" /f

@@ -1,0 +1,10 @@
+name: "SeelenUI "
+description: Minimal setup designed to replicate popshell experience. Intended for use with GlazeWM, PowerToys.
+depends:
+  - SeelenUI
+script: |
+  taskkill /IM slu-service.exe /f
+  taskkill /IM seelen-ui.exe /f
+  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
+  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\SeelenUI.zip' -DestinationPath '%AppData%\com.seelen.seelen-ui' -Force"
+  start /b slu-service

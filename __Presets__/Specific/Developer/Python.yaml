@@ -1,5 +1,5 @@
 name: Python
-description: Complete Python Ecosystem. Includes legacy (2.7), stable (3.13), and edge (3.14) runtimes with uv manager.
+description: Complete Python Ecosystem. Includes 2.7, 3.13 and 3.14 runtimes with uv manager.
 script: |
     @echo off
 depends:
