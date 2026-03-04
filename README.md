@@ -3,6 +3,8 @@
 WindowsBatchBox is a TUI orchestrator for `.bat` scripts based on YAML manifests.  
 It recursively scans the project root, builds a category tree from folders, and lets you run software setup/configuration in batches (including presets and bundles).
 
+![img.png](img.png)
+
 ## What It Does
 
 - Runs via `WindowsBatchBox.bat`.
