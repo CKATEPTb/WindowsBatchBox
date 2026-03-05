@@ -1,0 +1,7 @@
+name: "YASB "
+description: Minimal setup designed to replicate popshell experience. Intended for use with GlazeWM, PowerToys.
+depends:
+  - YASB
+script: |
+  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
+  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\YASB.zip' -DestinationPath '%UserProfile%' -Force"

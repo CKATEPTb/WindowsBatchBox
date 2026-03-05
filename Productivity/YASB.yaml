@@ -1,0 +1,6 @@
+name: YASB
+description: A highly configurable Windows status bar written in Python.
+depends:
+  - WinGet
+script: |
+  winget install --id AmN.yasb -e --accept-package-agreements --accept-source-agreements
