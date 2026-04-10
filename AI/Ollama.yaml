@@ -4,3 +4,5 @@ depends:
   - WinGet
 script: |
   winget install --id Ollama.Ollama -e --accept-package-agreements --accept-source-agreements
+  setx OPENAI_API_KEY "ollama"
+  setx OLLAMA_KV_CACHE_TYPE "q4_0"

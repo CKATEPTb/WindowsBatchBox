@@ -1,8 +1,0 @@
-name: 1 - Lowest
-description: Essential lightweight toolset. Includes a fast browser, basic text editor, and screenshot utility.
-script: |
-    @echo off
-depends:
-  - FlameShot
-  - Notepad++
-  - Vivaldi
