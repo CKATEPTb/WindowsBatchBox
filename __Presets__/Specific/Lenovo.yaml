@@ -1,7 +1,0 @@
-name: Lenovo
-description: "Lenovo Vantage & Hotkeys: Official hardware management suite."
-script: |
-    @echo off
-depends:
-  - Lenovo Commercial Vantage
-  - Lenovo Hotkeys
