@@ -3,4 +3,4 @@ description: Digital music service with access to millions of songs.
 depends:
   - Chocolatey
 script: |
-    choco install spotify -y
+    choco install spotify -y --ignore-checksums

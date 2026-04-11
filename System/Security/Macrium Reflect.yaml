@@ -1,6 +1,6 @@
 name: Macrium Reflect
 description: Reliable backup solution for Windows.
 depends:
-  - WinGet
+  - Chocolatey
 script: |
     choco install reflect-free -y

@@ -3,4 +3,4 @@ description: Intuitive GUI for WinGet, Chocolatey, Scoop, and more.
 depends:
   - WinGet
 script: |
-  winget install --id MartiCliment.UniGetUI -e --accept-package-agreements --accept-source-agreements
+  winget install --id Devolutions.UniGetUI -e --accept-package-agreements --accept-source-agreements
