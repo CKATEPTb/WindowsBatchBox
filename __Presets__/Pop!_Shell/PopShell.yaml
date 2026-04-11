@@ -1,0 +1,31 @@
+name: "Pop!_Shell"
+description: Minimal setup designed to replicate Pop!_Shell experience.
+depends:
+  - FlowLauncher
+  - GlazeWM
+  - VCTools (C++ Build Tools)
+  - cargo
+  - PowerToys
+  - NirCmd
+  - YASB
+script: |
+  echo Installing FlowLauncher preset...
+  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
+  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\FlowLauncher.zip' -DestinationPath '%AppData%' -Force"
+  echo Installing GlazeWM preset...
+  cargo install --git https://github.com/Dutch-Raptor/GAT-GWM.git --features=no_console
+  taskkill /F /IM GlazeWM* /T
+  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
+  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\GlazeWM.zip' -DestinationPath '%USERPROFILE%' -Force"
+  echo Installing PowerToys preset...
+  taskkill /F /IM PowerToys* /T
+  taskkill /IM Microsoft.CmdPal.UI.exe /f
+  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
+  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\PowerToys.zip' -DestinationPath '%LocalAppdata%' -Force"
+  schtasks /create /tn "InstantPowerToys" /tr "'%LocalAppdata%\PowerToys\PowerToys.exe' restart_as_admin" /sc once /st 00:00 /rl highest /f
+  schtasks /run /tn "InstantPowerToys"
+  schtasks /delete /tn "InstantPowerToys" /f
+  echo Installing YASB preset...
+  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
+  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\YASB.zip' -DestinationPath '%UserProfile%' -Force"
+  echo Done

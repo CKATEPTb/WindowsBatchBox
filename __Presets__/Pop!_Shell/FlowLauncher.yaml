@@ -1,7 +1,0 @@
-name: "FlowLauncher "
-description: Minimal setup designed to replicate popshell experience. Intended for use with GlazeWM, PowerToys.
-depends:
-  - FlowLauncher
-script: |
-  for %%I in ("%SCRIPT_SOURCE%") do set "SCRIPT_FOLDER=%%~dpI"
-  powershell -command "Expand-Archive -Path '%SCRIPT_FOLDER%\FlowLauncher.zip' -DestinationPath '%AppData%' -Force"
