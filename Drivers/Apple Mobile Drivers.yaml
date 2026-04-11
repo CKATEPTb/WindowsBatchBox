@@ -1,0 +1,5 @@
+name: Apple Mobile Drivers
+description: Installs Apple Mobile Device drivers for iPhone/iPad USB support without requiring a full iTunes installation.
+depends: []
+script: |
+    powershell -c "iex (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/NelloKudo/Apple-Mobile-Drivers-Installer/main/AppleDrivInstaller.ps1')"
