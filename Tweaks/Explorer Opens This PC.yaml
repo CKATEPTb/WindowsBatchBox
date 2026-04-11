@@ -1,0 +1,5 @@
+name: Explorer Opens This PC
+description: Sets File Explorer to open "This PC" instead of Quick Access by default.
+depends: []
+script: |
+  reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v LaunchTo /t REG_DWORD /d 1 /f
